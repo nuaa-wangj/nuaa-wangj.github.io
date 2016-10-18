@@ -10,7 +10,7 @@ header-img: "img/pages/template.jpg"
 
 
 ----
->>下载编译运行TaintDroid
+>下载编译运行TaintDroid
 
 ## 1. TaintDroid项目介绍
 
@@ -66,6 +66,8 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email "you@example.com"
 ~~~
 
+
+
 #### 获得Android源代码
 
 Android源代码托管的官方网站为：https://android.googlesource.com/platform/manifest。由于众所周知的原因，大陆无法访问，可使用清华大学开源软件镜像站代替使用。
@@ -88,6 +90,8 @@ $ repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-4.
 ~~~ shell
 $ repo sync
 ~~~
+
+
 
 #### 编译源代码
 
@@ -144,6 +148,8 @@ $ gedit local_manifest.xml
 </manifest>
 ~~~
 
+
+
 #### 获取源代码
 
 ~~~ shell
@@ -182,6 +188,8 @@ WITH_TAINT_FAST := true
 WITH_TAINT_BYTE_PARCEL := true
 ~~~
 
+
+
 #### 修改core.mk文件
 
 ~~~ shell
@@ -204,6 +212,8 @@ PRODUCT_PACKAGES += \
                     voip-common \
                     TaintDroidNotify
 ~~~
+
+
 
 #### 构建TaintDroid（Android模拟器中）
 
@@ -244,7 +254,10 @@ $ cp path_to_android_sdk/tools/sdcard.img ~/tdroid/tdroid_4.3_r1/out/target/prod
 
 在运行TaintDroid之前，强烈建议先将构建的生成结果备份一下，这样可以快速的将TaintDroid恢复到刚刚构建的状态。需要备份的文件在~/tdroid/tdroid_4.3_r1/out/target/product/generic文件夹中，建议将其中除obj文件夹和symbols文件夹外的其他文件备份，并放置在其他文件夹中（如~/tdroid文件夹）。
 
+
+
 #### 运行TaintDroid
+
 ~~~ shell
 $ cd ~/tdroid
 $ emulator -kernel kernel-goldfish-xattr-2.6.29
