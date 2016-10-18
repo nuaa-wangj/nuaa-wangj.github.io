@@ -117,7 +117,7 @@ $ gedit local_manifest.xml
 
 复制下列内容到文件local_manifest.xml中
 
-~~~
+~~~ xml
 <manifest>
   <remote name="github" fetch="git://github.com"/>
   <remove-project name="platform/dalvik"/>
