@@ -65,6 +65,7 @@ $ chmod a+x ~/bin/repo
 $ git config --global user.name "Your Name"
 $ git config --global user.email "you@example.com"
 ~~~
+
 #### 获得Android源代码
 
 Android源代码托管的官方网站为：https://android.googlesource.com/platform/manifest。由于众所周知的原因，大陆无法访问，可使用清华大学开源软件镜像站代替使用。
