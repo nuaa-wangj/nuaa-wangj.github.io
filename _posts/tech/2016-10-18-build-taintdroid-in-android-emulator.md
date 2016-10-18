@@ -23,7 +23,7 @@ TaintDroid通过修改Android源代码实现相关功能，其支持的最新系
 ### Step 0: 安装相关软件
 
 ~~~ shell
-$ sudo apt-get install curl git
+$ sudo apt-get install curl git libswitch-perl gperf flex
 ~~~
 
 上述软件为必须软件，若在实践过程中出现问题，自行Google即可。
@@ -278,29 +278,5 @@ $ ./adb install path/to/apk/file
 
 ![taintdroid-notify-detail](http://7xsbrq.com1.z0.glb.clouddn.com/img/blogs/blog-taintdroid-notify-detail.png)
 
-## 3. 其他注意事项
-
-#### 可能出现的问题：
-
- /bin/bash: flex: command not found
-
-解决方法： 
-~~~ shell
-sudo apt-get install flex
-~~~
-
- sh: 1: gperf: not found
-
-解决方法： 
-~~~ shell
-sudo apt-get install gperf
-~~~
-
- Can't locate Switch.pm in @INC (you may need to install the Switch module) 
-
-解决方法： 
-~~~ shell
-sudo apt-get install libswitch-perl
-~~~
 
 
