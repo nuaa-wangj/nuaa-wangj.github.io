@@ -21,6 +21,7 @@ TaintDroid通过修改Android源代码实现相关功能，其支持的最新系
 ## 2. 构建TaintDroid
 
 ### Step 0: 安装相关软件
+
 ~~~ shell
 $ sudo apt-get install curl git
 ~~~
@@ -34,6 +35,7 @@ $ sudo apt-get install curl git
 Repo是谷歌用Python脚本写的调用git的一个脚本。主要是用来下载、管理Android项目的软件仓库。 更多关于Repo的信息，参见Google[开发](https://source.android.com/source/developing.html)网页。
 
 **下载repo工具**
+
 ~~~ shell
 $ mkdir ~/bin
 $ PATH=~/bin:$PATH
@@ -42,13 +44,15 @@ $ chmod a+x ~/bin/repo
 ~~~
 
 **修改repo文件**
-~~~shell
+
+~~~ shell
 $ gedit ~/bin/repo
 //将 REPO_URL 一行替换成为：REPO_URL = 'https://gerrit-google.tuna.tsinghua.edu.cn/git-repo'
 ~~~
 
 *前面两步也可简化为*
-~~~shell
+
+~~~ shell
 $ mkdir ~/bin
 $ PATH=~/bin:$PATH
 $ wget -P ~/bin https://raw.githubusercontent.com/traceflight/Android-related-repo/master/Repo-Script/repo
@@ -56,6 +60,7 @@ $ chmod a+x ~/bin/repo
 ~~~
 
 **配置Git**
+
 ~~~ shell
 $ git config --global user.name "Your Name"
 $ git config --global user.email "you@example.com"
@@ -65,17 +70,20 @@ $ git config --global user.email "you@example.com"
 Android源代码托管的官方网站为：https://android.googlesource.com/platform/manifest。由于众所周知的原因，大陆无法访问，可使用清华大学开源软件镜像站代替使用。
 
 **建立工作目录：**
+
 ~~~ shell
 $ mkdir -p ~/tdroid/tdroid-4.3_r1
 $ cd ~/tdroid/tdroid-4.3_r1
 ~~~
 
 **初始化仓库，使用android 4.3**
+
 ~~~ shell
 $ repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-4.3_r1
 ~~~
 
 **同步源码树（所需时间较长）**
+
 ~~~ shell
 $ repo sync
 ~~~
@@ -91,6 +99,7 @@ $ make -j4
 ~~~
 
 **运行模拟器**
+
 ~~~ shell
 $ emulator
 ~~~
@@ -271,23 +280,23 @@ $ ./adb install path/to/apk/file
 
 ## 3. 其他注意事项
 
-可能出现的问题：
+#### 可能出现的问题：
 
-* /bin/bash: flex: command not found
+ /bin/bash: flex: command not found
 
 解决方法： 
 ~~~ shell
 sudo apt-get install flex
 ~~~
 
-* sh: 1: gperf: not found
+ sh: 1: gperf: not found
 
 解决方法： 
 ~~~ shell
 sudo apt-get install gperf
 ~~~
 
-* Can't locate Switch.pm in @INC (you may need to install the Switch module) 
+ Can't locate Switch.pm in @INC (you may need to install the Switch module) 
 
 解决方法： 
 ~~~ shell
