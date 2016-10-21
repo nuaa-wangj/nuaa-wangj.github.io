@@ -7,7 +7,7 @@ This is my personal blog modified from [Microdust](https://github.com/Azeril/aze
 * Reorganize the folders structure for more elegent look. Such as move *`Tools.md, About.md, Lists.md, tags.html`* to folder *`pages`*, merge folder *`img`* and *`images`*.
 * Redesign same pages' logic. Some buttons on top right of the tab bar can not just display a static markdown page but a list of blogs classified by category. So it is fair to these buttons.
 * Remove some useless functions in my opinion. For example, remove tags above title. And in [Microdust](https://github.com/Azeril/azeril.github.io) a click on these tags will led to 404 page.
-* ...
+* Remove "#" in front of each title in [Microdust](https://github.com/Azeril/azeril.github.io) theme.  
 
 ## How to use it as your own blog?
 
@@ -40,7 +40,7 @@ This is my personal blog modified from [Microdust](https://github.com/Azeril/aze
 * 重新组织了文件结构，使得看上去更舒服（只适用于OCD）。包括：将*`Tools.md, About.md, Lists.md, tags.html`* 移动至文件夹 *`pages`* 中，将文件夹 *`img`* 和 *`images`* 合并等.
 * 重新设计了主页顶端导航栏按钮的逻辑。 原本按钮除第一个外，其他的仅显示一个`markdown`或`html`页面，将其修改为分类标签，每个按钮显示一类主题的博文。
 * 删除了一些感觉没有用的功能。如：删除了文章标题上面的的`tags`，这些标签能够表达的意义有限。而且，在[Microdust](https://github.com/Azeril/azeril.github.io) 中点击这些标签会得到404页面。
-* ...
+* **解决了[Microdust](https://github.com/Azeril/azeril.github.io)中文章标题前显示#的问题。 2016.10.21** 
 
 ## 如何使用这个主题？ ##
 
@@ -61,6 +61,6 @@ This is my personal blog modified from [Microdust](https://github.com/Azeril/aze
 
 ## TODO ##
 
-* 现在文章的标题前面都会显示一个#，这个问题在[Microdust](https://github.com/Azeril/azeril.github.io) 中也存在，但是在[Clean Blog theme by Start Bootstrap](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll)中不存在，因此可以对比两个项目，查出问题所在。（一直没有时间做）
+* ~~现在文章的标题前面都会显示一个#，这个问题在[Microdust](https://github.com/Azeril/azeril.github.io) 中也存在，但是在[Clean Blog theme by Start Bootstrap](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll)中不存在，因此可以对比两个项目，查出问题所在。（一直没有时间做）~~ **Fixed at 2016.10.21**
 * 各个分类文章上一篇和下一篇的按钮和提示。
 * 美化工作。
