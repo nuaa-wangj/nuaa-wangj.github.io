@@ -10,6 +10,9 @@ header-img: "img/blogs/blog-linux-ubuntu-capslock.jpg"
 
 
 ----
+
+**新搭建了个人博客，文章全部转到[http://blog.datarepo.cn](http://blog.datarepo.cn)上更新。**
+
 > 对于一些用户（如Emacs党）来说，Ctrl键是一个经常需要使用的键，但是由于其位于键盘的两个角落，使用起来不是十分顺手。大小写锁定键Caps Lock在实际使用中并不是十分常用，大小写切换的功能可以通过配合Shift键完成，下面给出将Caps Lock键替换为Ctrl键的方法。
 
 
