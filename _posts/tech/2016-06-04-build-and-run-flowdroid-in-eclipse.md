@@ -9,6 +9,9 @@ header-img: "img/pages/template.jpg"
 
 
 ----
+
+**新搭建了个人博客，文章全部转到[http://blog.datarepo.cn](http://blog.datarepo.cn)上更新。**
+
 > 最近在研究Android软件的静态分析，[FlowDroid](https://blogs.uni-paderborn.de/sse/tools/flowdroid/)是一个高精度的Android程序污点分析工具，能够分析apk文件，生成软件调用图。下面给出了FlowDroid通过源码进行构建和运行的过程。
 
 ## 1. 安装相关软件 ##
