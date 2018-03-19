@@ -10,6 +10,9 @@ header-img: "img/pages/template.jpg"
 
 
 ----
+
+**新搭建了个人博客，文章全部转到[http://blog.datarepo.cn](http://blog.datarepo.cn)上更新。**
+
 >下载编译运行TaintDroid
 
 ## 1. TaintDroid项目介绍 ##
